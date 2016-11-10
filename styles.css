@@ -1,0 +1,112 @@
+body {
+  background-color: #f0f0f0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.input-box {
+  width: 80%;
+  margin-top: 50px;
+  border: none;
+  padding: .5em;
+  font-size: 1.4em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.toggle {
+  margin-right: 2em;
+}
+
+.delete {
+  float: right;
+  margin-right: 6em;
+}
+
+h1 {
+  color: #5a4c48;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+ul  {
+  list-style: none;
+}
+
+li {
+  font-size: 1em;
+  text-align: left;
+  margin-left: 2em;
+  padding-top: 1em;
+  padding-bottom: 0em;
+}
+
+li.purchased{
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+.food-app {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  color: #444;
+  line-height: 1.5em;
+  border: 1px solid #d2d2d2;
+  background: #fff;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+  background: -webkit-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+  background: -moz-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+  background: -ms-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+  background: -o-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+  background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+  -webkit-background-size: 100% 20px;
+  -moz-background-size: 100% 20px;
+  -ms-background-size: 100% 20px;
+  -o-background-size: 100% 20px;
+  background-size: 100% 2.5em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+   -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+}
+
+.food-app::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  top: 0;
+  left: 30px;
+  bottom: 0;
+  border: 1px solid;
+  border-color: transparent #efe4e4;
+
+}
+
+.foods-header {
+   background-color: #FFF;
+   width: 100%;
+}
+
+.food-app input::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.food-app input::-moz-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.food-app input::input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+

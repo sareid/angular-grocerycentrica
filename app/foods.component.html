@@ -1,0 +1,15 @@
+<div class="food-app">
+	<div class="foods-header">
+		<input placeholder="What would you like to buy?"
+			#foodName (keyup.enter)="add(foodName.value); foodName.value=''"
+			class="input-box" />
+	</div>
+	<ul class="foods">
+		<li *ngFor="let food of foods" [class.purchased]="food.purchased">
+	  	<input class="toggle" type="checkbox" (click)="toggleFoodPurchased(food)" [checked]="food.purchased">
+	  	<span>{{food.name}}</span>
+	  	<button class="delete"
+	  		(click)="delete(food); $event.stopPropagation()">X</button>
+		</li>
+	</ul>
+</div>
