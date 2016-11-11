@@ -44,7 +44,7 @@ export class FoodsComponent implements OnInit {
 
 	toggleFoodPurchased(food) {
 		food.purchased = !food.purchased;
-  	this.foodService.toggleFoodPurchased(food).then(foods => this.foods = foods());
+  	this.foodService.toggleFoodPurchased(food).then(() => this.getFoods());
   }
 }
 

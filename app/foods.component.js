@@ -45,7 +45,7 @@ var FoodsComponent = (function () {
     FoodsComponent.prototype.toggleFoodPurchased = function (food) {
         var _this = this;
         food.purchased = !food.purchased;
-        this.foodService.toggleFoodPurchased(food).then(function (foods) { return _this.foods = foods(); });
+        this.foodService.toggleFoodPurchased(food).then(function () { return _this.getFoods(); });
     };
     return FoodsComponent;
 }());
